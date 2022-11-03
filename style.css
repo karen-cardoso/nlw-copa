@@ -3,13 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
 body {
   background-color: #121214;
   background-image: url('./assets/bg.svg');
   background-position: center 55.6%;
 }
-ul {
-  list-style: none;
+
+body * {
+  font-family: 'Roboto', sans-serif;
 }
 
 #app {
@@ -38,6 +44,7 @@ header {
 
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
 
   width: fit-content;
@@ -49,5 +56,33 @@ header {
 
 .card h2 span {
   color: #e1e1e6;
+  font-size: 14px;
   text-transform: uppercase;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 270px;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card ul li + li {
+  padding-top: 24px;
+  border-top: 1px solid #323238;
+}
+
+.card ul li strong {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+
+  color: #e1e1e6;
 }
