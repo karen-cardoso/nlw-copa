@@ -8,7 +8,7 @@
 
   --card-color-primary: #F7DD43;
   --card-title-border-color: #746615;
-  --card-border: #F7DD43;
+  --card-border-color: #F7DD43;
   --card-bg-color: #1D1C19;
   --bg: url('./assets/bg-yellow.svg');
 }
@@ -16,7 +16,7 @@
 body.blue {
   --card-color-primary: #338AF3;
   --card-title-border-color: #338AF3;
-  --card-border: #338AF3;
+  --card-border-color: #338AF3;
   --card-bg-color: #202024;
   --bg: url('./assets/bg-blue.svg');
 }
@@ -24,7 +24,7 @@ body.blue {
 body.green {
   --card-color-primary: #047C3F;
   --card-title-border-color: #047C3F;
-  --card-border: #047C3F;
+  --card-border-color: #047C3F;
   --card-bg-color: #1A1F1B;
   --bg: url('./assets/bg-green.svg');
 }
@@ -67,7 +67,7 @@ header {
   text-align: center;
 
   background: #1d1c19;
-  border-bottom: 2px solid var(--card-border);
+  border-bottom: 2px solid var(--card-border-color);
   border-radius: 6px;
 }
 
